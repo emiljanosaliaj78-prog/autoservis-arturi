@@ -1,0 +1,428 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #222;
+    font-size: 40px;
+}
+
+h2 {
+    color: #555;
+}
+
+p {
+    font-size: 20px;
+}
+
+button {
+    background-color: #222;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}nav {
+    background-color: #222;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+    font-size: 17px;
+    font-weight: bold;
+}nav a:hover {
+    color: #ff6600;
+}section {
+    background-color: white;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 30px;
+    color: #222;
+}
+
+section p {
+    color: #555;
+}
+
+
+
+
+
+
+
+
+
+.car-card {
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.car-card h3 {
+    font-size: 24px;
+    color: #222;
+    margin-top: 0;
+}
+
+.car-card p {
+    font-size: 16px;
+    color: #555;
+    margin: 8px 0;
+}
+
+.car-card h4 {
+    font-size: 24px;
+    color: #ff6600;
+    margin: 15px 0;
+}.car-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}.car-card {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}.part-card {
+    display: inline-block;
+    vertical-align: top;
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    margin-top: 25px;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.part-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.part-card h3 {
+    font-size: 24px;
+   color: #ff6600;
+    margin-top: 15px;
+}
+
+.part-card p {
+    font-size: 16px;
+    color: #555;
+    margin: 8px 0;
+}
+
+.part-card h4 {
+    font-size: 24px;
+    color: #ff6600;
+    margin: 15px 0;
+}.part-card a {
+    display: inline-block;
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-right: 8px;
+    margin-top: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.part-card a:hover {
+    background-color: #ff6600;
+}#kontakt {
+    background-color: white;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#kontakt h2 {
+    font-size: 30px;
+    color: #222;
+}
+
+#kontakt p {
+    font-size: 17px;
+    color: #555;
+}
+
+#kontakt a {
+    display: inline-block;
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-right: 8px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+#kontakt a:hover {
+    background-color: #ff6600;
+}#sherbimet {
+    background-color: white;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#sherbimet h2 {
+    font-size: 30px;
+    color: #222;
+}
+
+#sherbimet p {
+    font-size: 17px;
+    color: #555;
+    margin: 12px 0;
+}
+
+
+
+
+
+
+
+.hero {
+    background-color: #222;
+    color: white;
+    padding: 60px 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    text-align: center;
+}
+.hero img {
+    width: 350px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.hero h1 {
+    font-size: 45px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.hero a {
+    display: inline-block;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    margin-top: 20px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.hero a:hover {
+    background-color: white;
+    color: hsl(0, 0%, 13%);
+}
+#makina + h2 {
+    font-size: 32px;
+    color: #222;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.car-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    transition: 0.3s;
+}.car-card img {
+    transition: transform 0.3s ease;
+}
+
+.car-card:hover img {
+    transform: scale(1.04);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow-y: auto;
+}
+
+.modal-content {
+    background-color: white;
+    width: 90%;
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.modal-content img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.modal-content h2 {
+    color: #222;
+    font-size: 28px;
+}
+
+.modal-content p {
+    font-size: 17px;
+    color: #555;
+}
+
+.modal-content h3 {
+    color: #ff6600;
+    font-size: 26px;
+}
+
+.modal-content button {
+    background-color: #222;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.modal-content a {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    padding: 12px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+.galeria {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.galeria img {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.galeria button {
+    font-size: 22px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+/* Përshtatja për telefon */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    nav {
+        padding: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    nav a {
+        margin-right: 0;
+        font-size: 15px;
+    }
+
+    .hero {
+        padding: 30px 15px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .car-card,
+    .part-card {
+        display: block;
+        width: 100%;
+        max-width: 350px;
+        box-sizing: border-box;
+        margin: 20px auto;
+    }
+
+    .galeria {
+        gap: 5px;
+    }
+
+    .galeria img {
+        min-width: 0;
+        height: 220px;
+        flex: 1;
+    }
+
+    .modal-content {
+        width: 95%;
+        margin: 15px auto;
+        padding: 15px;
+    }
+
+    #kontakt,
+    #sherbimet {
+        padding: 20px 15px;
+    }
+
+
+}
+
+#pikat-fotove {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.pika {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+.pika.aktive {
+    background-color: orange;
+}

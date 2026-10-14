@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoservis Arturi</title>
+</head><link rel="stylesheet" href="style.css">
+
+<body>
+<div id="kryefaqe"></div> 
+
+<nav>
+    <a href="#kryefaqe">Kryefaqe</a>
+    <a href="#makina">Makina</a>
+    <a href="#pjeset">Pjesë Këmbimi</a>
+    <a href="#sherbimet">Shërbime</a>
+    <a href="#kontakt">Kontakt</a>
+</nav>
+<section class="hero">
+<img src="images/car.jpg" alt="Autoservis Arturi">
+    <h1>Autoservis Arturi</h1>
+
+    <p>Makina • Pjesë Këmbimi • Servis</p>
+
+    <p>Makina dhe pjesë të reja ose të përdorura.</p>
+
+    <a href="#makina">Shiko makinat</a>
+
+</section>
+<div 
+    <h1>Autoservis Arturi - Pjesë Këmbimi & Makina</h1>
+    <section>
+    <h2>Makina & Pjesë Këmbimi</h2>
+    <p>Gjej makina dhe pjesë të reja ose të përdorura.</p>
+</section>
+<div id="makina"></div>
+<h2>Makina në shitje</h2>
+<div class="car-card">
+<img src="images/car.jpg" alt="BMW X3">
+    <h3>BMW X3 3.0 Benzinë</h3>
+
+    <p>Viti: 2011</p>
+    <p>Motor: 3.0 Benzinë</p>
+    <p>Kambio: Automatik</p>
+    <p>Kilometra: 180.000 km</p>
+<button onclick="hapDetajet()">Shiko detajet</button>
+<div id="pjeset"></div>
+</div><div class="part-card">
+
+    <img src="images/car.jpg" alt="Pjesë këmbimi">
+
+    <h3>Fener BMW X3</h3>
+
+    <p>Për: BMW X3</p>
+    <p>Gjendja: E përdorur</p>
+
+    <h4>€150</h4>
+
+    <a href="https://wa.me/355696539555" target="_blank">
+    WhatsApp Shqipëri
+</a>
+
+<a href="https://wa.me/393516108178" target="_blank">
+    WhatsApp Itali
+</a>
+
+</div>
+<p>Makina dhe pjesë këmbimi të reja dhe të përdorura.</p>
+    <h2>Pjesë këmbimi & Makina</h2>
+<button>Na kontakto në WhatsApp</button>
+    <p>Mirë se vini në Autoservis Arturi.</p>
+
+<section id="kontakt"><p>
+    📍 Na gjej në Google Maps:
+</p>
+
+<a href="https://maps.app.goo.gl/eUajKNV4UMFs3rQ7A" target="_blank">
+    Hap Google Maps
+</a>
+    <h2>Na Kontakto</h2>
+
+    <p>📞 WhatsApp Shqipëri: +355 69 653 9555</p>
+    <p>📞 WhatsApp Itali: +39 351 610 8178</p>
+
+    <a href="https://wa.me/355696539555" target="_blank">
+        WhatsApp Shqipëri
+    </a>
+
+    <a href="https://wa.me/393516108178" target="_blank">
+        WhatsApp Itali
+    </a>
+<section id="sherbimet">
+    <h2>Shërbimet</h2>
+
+    <p>🔧 Diagnostikim i makinave</p>
+    <p>🛠️ Riparime mekanike</p>
+    <p>🚗 Servis periodik</p>
+    <p>⚙️ Pjesë këmbimi të reja dhe të përdorura</p>
+    <p>🚘 Shitje makinash</p>
+</section>
+<div id="dritarja-makines" class="modal">
+    <div class="modal-content">
+        <button onclick="mbyllDetajet()">Mbyll ✖</button>
+
+        <h2>BMW X3 3.0 Benzinë</h2>
+
+        <div class="galeria">
+    <button onclick="fotoPara()">❮</button>
+
+    <img id="foto-detajeve" src="images/car.jpg" alt="BMW X3" onclick="zmadhoFoton()">
+
+    <button onclick="fotoPas()">❯</button>
+</div>
+<div id="pikat-fotove"></div>
+
+        <p>Viti: 2011</p>
+        <p>Motori: 3.0 Benzinë</p>
+        <p>Kambio: Automatik</p>
+        <p>Kilometra: 180.000 km</p>
+
+        <h3>Çmimi: €8.500</h3>
+
+        <a href="https://wa.me/393516108178" target="_blank">
+            Kontakto në WhatsApp Itali
+        </a>
+    </div>
+</div>
+<script>
+const fotot = [
+"images/car.jpg",
+"images/car2.jpg",
+"images/car3.jpg"
+];
+
+let fotoAktuale = 0;
+
+
+function shfaqFoton() {
+    document.getElementById("foto-detajeve").src = fotot[fotoAktuale];
+
+    const zonaPikave = document.getElementById("pikat-fotove");
+    zonaPikave.innerHTML = "";
+
+    fotot.forEach((foto, index) => {
+        const pika = document.createElement("span");
+        pika.className = "pika";
+
+        if (index === fotoAktuale) {
+            pika.classList.add("aktive");
+        }
+
+        pika.onclick = function () {
+            fotoAktuale = index;
+            shfaqFoton();
+        };
+
+        zonaPikave.appendChild(pika);
+    });
+}
+
+function fotoPas() {
+fotoAktuale = (fotoAktuale + 1) % fotot.length;
+shfaqFoton();
+}
+
+function fotoPara() {
+fotoAktuale = (fotoAktuale - 1 + fotot.length) % fotot.length;
+shfaqFoton();
+}
+
+function hapDetajet() {
+fotoAktuale = 0;
+shfaqFoton();
+document.getElementById("dritarja-makines").style.display = "block";
+}
+
+function mbyllDetajet() {
+document.getElementById("dritarja-makines").style.display = "none";
+}
+
+
+function zmadhoFoton() {
+    const foto = document.getElementById("foto-detajeve");
+    foto.style.cursor = "zoom-in";
+    foto.style.position = "fixed";
+    foto.style.left = "0";
+    foto.style.top = "0";
+    foto.style.width = "100vw";
+    foto.style.height = "100vh";
+    foto.style.maxWidth = "100vw";
+    foto.style.maxHeight = "100vh";
+    foto.style.objectFit = "contain";
+    foto.style.background = "#111";
+    foto.style.zIndex = "9999";
+    foto.onclick = function() {
+        foto.removeAttribute("style");
+        foto.onclick = zmadhoFoton;
+    };
+}
+
+</script>
+</html>
